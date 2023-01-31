@@ -1,6 +1,14 @@
 [package]
 name = "token-buddy"
 version = "0.1.0"
+authors = ["ldeconantsesznak@gmail.com"]
+description = "A Rust library for generating safe, encrypted tokens."
+license = "MIT"
+repository = "https://github.com/LukasDeco/token-buddy"
+homepage = "https://github.com/LukasDeco/token-buddy"
+readme = "README.md"
+keywords = ["crypto", "authentication"]
+categories = ["crypto"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
