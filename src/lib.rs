@@ -16,11 +16,11 @@ impl TokenGenerator {
         }
     }
 
-    pub fn generate(&mut self) -> String {
-        let mut token = [0u8; 24];
-        self.rng.fill(&mut token);
+    pub fn generate(&mut self, length: usize) -> String {
+        let mut token = vec![0u8; length];
+        self.rng.fill(&mut token[..]);
         self.sha.input(&token);
-        let mut output = [0; 32];
+        let mut output = [0; 48];
         self.sha.result(&mut output);
         self.sha.reset();
         hex::encode(output)
