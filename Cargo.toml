@@ -1,6 +1,6 @@
 [package]
 name = "token-buddy"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["ldeconantsesznak@gmail.com"]
 description = "A Rust library for generating safe, encrypted tokens."
 license = "MIT"
